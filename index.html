@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Nft Preview Card</title>
+  </head>
+
+  <style>
+    .div1 {
+      display: flex;
+      align-items: center;
+    }
+
+    .div2 {
+      display: flex;
+      align-items: center;
+    }
+
+    .div3 {
+      position: relative;
+      bottom: -94px;
+      left: 49px;
+    }
+
+    .div4 {
+      position: relative;
+      bottom: -58px;
+      left: 136px;
+    }
+    .text {
+      font-family: Outfit;
+    }
+
+    #line {
+      position: absolute;
+      bottom: 81px;
+      height: 1px;
+      background-color: #2e405a;
+      width: 302px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1440px;
+      max-width: 100%;
+      height: 900px;
+      max-height: 100vh;
+      font-family: "Outfit";
+      background: rgba(13, 25, 44, 1);
+    }
+
+    .Nft {
+      position: absolute;
+      top: 0px;
+    }
+
+    h1 {
+      display: block;
+      position: relative;
+      top: 24px;
+      width: 302px;
+      font-size: 22px;
+      color: white;
+    }
+
+    #description {
+      top: 26px;
+      position: relative;
+      font-size: 18px;
+      color: #8bacd9;
+      margin: 0;
+    }
+
+    #profile-picture {
+      position: absolute;
+      bottom: -48px;
+      height: 33px;
+      width: 33px;
+      box-sizing: border-box;
+      border-radius: 100%;
+      border: 1px solid #ffffff;
+    }
+
+    #ETH {
+      color: rgba(0, 255, 248, 1);
+      padding-left: 6.49px;
+    }
+
+    p.smalltext {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    #cardbox {
+      height: 596px;
+      width: 350px;
+      left: 0px;
+      top: 0px;
+      border-radius: 15px;
+      background: rgba(21, 38, 63, 1);
+    }
+
+    #innercard {
+      position: relative;
+      height: 596px;
+      max-width: 302px;
+      left: 24px;
+      margin: 0;
+      padding: 0;
+    }
+
+    #softblue {
+      color: #8bacd9;
+    }
+
+    .middiv {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 38px;
+    }
+
+    .clock {
+      padding-right: 9px;
+    }
+
+    .bottomdiv {
+      position: absolute;
+      bottom: 80px;
+    }
+
+    .icon {
+      top: 129px;
+      left: 129px;
+      position: absolute;
+      height: 40px;
+      width: 44px;
+    }
+    #nftpic {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    #view {
+      position: relative;
+      top: 24px;
+    }
+
+    #hoverpic:hover {
+      opacity: 50%;
+    }
+
+    #hoverh:hover {
+      color: cyan;
+    }
+
+    #hovername:hover {
+      color: cyan;
+    }
+
+    #hoverh {
+      color: white;
+      transition: ease-in-out 0.7s;
+    }
+
+    #hovername {
+      color: white;
+      transition: ease-in-out 0.7s;
+    }
+
+    #hoverpic {
+      width: 302px;
+      height: 302px;
+      border-radius: 10px;
+      background-color: cyan;
+      transition: ease-in-out 0.7s;
+      opacity: 0;
+    }
+  </style>
+
+  <body>
+    <div id="cardbox">
+      <div id="innercard">
+        <div id="view">
+          <div class="Nft">
+            <img
+              id="nftpic"
+              src="./image-equilibrium.jpg"
+              alt="Nft picture of cube standing on one angle point"
+            />
+          </div>
+
+          <div id="hoverpic">
+            <img class="icon" src="./icon-view.svg" />
+          </div>
+        </div>
+
+        <div>
+          <h1 id="hoverh" class="text">
+            Equilibrium #3429
+          </h1>
+
+          <p id="description">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+        </div>
+
+        <div class="middiv">
+          <div class="div1">
+            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+
+            <p class="text" id="ETH">0.041 ETH</p>
+          </div>
+
+          <div class="div2">
+            <svg
+              class="clock"
+              width="17"
+              height="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            <p class="text" class="smalltext" id="softblue">3 days left</p>
+          </div>
+
+          <div id="line"></div>
+
+          <div class="bottomdiv">
+            <div>
+              <img
+                id="profile-picture"
+                src="./image-avatar.png"
+                alt="Avatar picture of a user"
+              />
+            </div>
+
+            <div class="div3">
+              <p class="text" class="smalltext" id="softblue">Creation of</p>
+            </div>
+
+            <div class="div4">
+              <p id="hovername" class="text" class="smalltext">
+                Jules Wyvern
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
